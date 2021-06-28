@@ -24,10 +24,12 @@ const Sidebar = ({sidebar, handleToggleSidebar}) => {
         <nav className={sidebar? "sidebar open" : "sidebar"}
             onClick={() => handleToggleSidebar(false)}>
 
-            <li>
+            
+                <li>
                 <MdHome size={23}/>
                 <span>Home</span>
-            </li>
+                </li>
+            
             <li>
                 <MdSubscriptions size={23}/>
                 <span>Subscriptions</span>

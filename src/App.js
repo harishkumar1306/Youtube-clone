@@ -12,6 +12,7 @@ import './_app.scss';
 import {Redirect, Route, Switch, useHistory} from 'react-router-dom';
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import Searchscreen from "./screens/Searchscreen";
 
 const Layout = ({ children }) =>{
 
@@ -59,9 +60,9 @@ const App = () => {
       <LoginScreen />
      </Route>
 
-     <Route path='/search'>
+     <Route path='/search/:query'>
        <Layout>
-         <h1>Search Results</h1>
+         <Searchscreen />
        </Layout>
      </Route>
 
